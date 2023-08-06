@@ -1,47 +1,47 @@
 # My ErgodoxEZ configuration
-This is my configuration for my ErgodoxEZ. The physical keyboard is configured as follows:
-* Keyboard
-    * White Color
-    * Shaped Unlabeled keycaps
-    * Black feet
-    * No shine or glow
+This is my configuration for my ErgodoxEZ.
 
-* Switches
-    * Cherry MX Brown switches
-    * 0.15mm film
+## Physical Keyboard Configuration
+* Keyboard:
+    * Color: White
+    * Keycaps: Blank sculpted
+    * Feet: Black
+    * No LEDs
+* Switches:
+    * Cherry MX Brown
+    * Filmed with 0.15mm films
     * Lubricated with Krytox 205g0
-    * O-rings ? thick and ? HA
+    * O-rings: 2mm, 40A hardness
 
 ## Installation
 0. Install QMK
 1. Install `teensy_loader_cli` using your package manager
-2. Download `https://github.com/qmk/qmk_firmware`
-3. Download this repository and move it into `qmk_firmware/keyboards/ergodox_ez/keymaps`
-4. Inside `qmk_firmware` run `make ergodox_ez:MMqd-custom && teensy_loader_cli --mcu=atmega32u4 -w ergodox_ez_base_MMqd-custom.hex && rm ergodox_ez_base_MMqd-custom.hex`
+2. Clone the `https://github.com/qmk/qmk_firmware` repository
+3. Clone this repository and move it into `qmk_firmware/keyboards/ergodox_ez/keymaps`
+4. Inside `qmk_firmware` run `make ergodox_ez:MMqd-ergodox-ez && teensy_loader_cli --mcu=atmega32u4 -w ergodox_ez_base_MMqd-ergodox-ez.hex && rm ergodox_ez_base_MMqd-ergodox-ez.hex`
 
 ## Features
-* Dimmed layer indicator LEDs to avoid distraction in low light environments
-* Easily accessible modifiers and layer switching on thumb cluster
+* Dimmed layer LEDs for low light environments
+* Thumb cluster provides easy access to modifiers and layer switching
 * Colemak layout
 * QWERTY layout layer for gaming
-* Mouse layer
+* Mouse layer removes the need for an external mouse for day-to-day tasks
 
 ## Design Considerations
-* Disabling all unused keys, to prevent accidentally pressing them
+Disable unused keys to prevent miss-presses
     * Except for when it is easier/necessary for a key combination 
-* Minimize finger travel distance between combinations
-* Using the same keys for as many functions as possible (Key when pressed, and modifier when held)
-* Optimization for specific workflows:
-    * Vim and i3
-    * programming
+* Optimize finger travel distances for common key combinations
+* Utilize keys for multiple functions (tap for key, hold for modifier)
+* Optimized for Vim, i3, and programming workflows
+* Prevent unnatural finger stretching/compressing
 
 ## Layout
 All empty keys are keys inherited from Layer 0.
 
-**Note:** dual-function keys can be double tapped, which acts the same as if there was no modifier on hold, and the key was held.
+**Note:** Keys with dual functions can be double tapped to use the normal key press, ignoring the modifier assigned to holding the key down. This allows you to hold the base key.
 
 ### Keycap Rotation
-Some key caps are rotated from the default configuration for ease of access, which is especially important for the keys near the thumb-cluster, which by default are meant to be accessed by fingers other than the thumb. Keys marked with a `x` are rotated 180 degrees. The halves are mirrored.
+To improve thumb access, some keycaps are rotated 180° from their default orientation. This is especially important for keys near the thumb cluster, which are normally meant to be pressed by other fingers. Keys marked with `x` are rotated. The halves of the keyboard are mirrored.
 
 ```
 ,--------------------------------------------------.           ,--------------------------------------------------.
@@ -88,7 +88,8 @@ Some key caps are rotated from the default configuration for ease of access, whi
 ```
 
 ### Layer 1: Numbers and Symbols
-Numbers are ordered by frequency, so higher digits are used less often, with even numbers for the right hand, and odd numbers for the left. Numbers are positioned further from the index finger, with the largest digit being diagonal from the index finger, in the hardest to reach position.
+The number keys are positioned based on the principle that larger numbers are used less than smaller ones, with more commonly used digits placed closer to the index fingers. Even numbers are assigned to the left hand, while odd numbers are on the right. The largest numbers are placed diagonally from the index fingers in the hardest to reach positions. This placement minimizes overall finger travel when entering numbers.
+
 ```
 ,--------------------------------------------------.           ,--------------------------------------------------.
 |        |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |           |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |        |
@@ -136,7 +137,7 @@ Numbers are ordered by frequency, so higher digits are used less often, with eve
 ```
 
 ### Layer 3: QWERTY
-QWERTY layer with some extra keys for easy access.
+QWERTY layer for gaming with some extra keys for easy access.
 ```
 ,--------------------------------------------------.           ,--------------------------------------------------.
 |        |   1  |   2  |   3  |   4  |   5  |  6   |           |      |      |      |      |      |      |        |
@@ -158,8 +159,9 @@ QWERTY layer with some extra keys for easy access.
                                 `--------------------'     `--------------------'
 ```
 
-### Layer 4: Colemak with rotated keys test
-Some frequently used keys were rotated to be on top of the index finger, instead of on the sides, since it is easier to reach them that way.
+### Layer 4: Colemak with rotated keys test (legacy)
+Certain frequently used keys have been rotated to sit directly under the index fingers rather than on the sides. This makes them quicker and easier to access compared to their default positions.
+
 ```
 ,--------------------------------------------------.           ,--------------------------------------------------.
 |        |      |      |      |      |      |      |           |      |      |      |      |      |      |        |
