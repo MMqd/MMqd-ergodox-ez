@@ -1,5 +1,5 @@
 # My ErgodoxEZ configuration
-My ErgodoxEZ keyboard configuration.
+This is my configuration for the Ergodox EZ keyboard that I have used daily since 2020. The core layout has remained largely the same over time, with minor iterative adjustments and optimizations.
 
 ## Physical Configuration
 * Keyboard:
