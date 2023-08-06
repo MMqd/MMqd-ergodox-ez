@@ -1,11 +1,12 @@
 # My ErgodoxEZ configuration
-This is my configuration for my ErgodoxEZ.
+My ErgodoxEZ keyboard configuration.
 
-## Physical Keyboard Configuration
+## Physical Configuration
 * Keyboard:
     * Color: White
     * Keycaps: Blank sculpted
     * Feet: Black
+        * Tip: Mark the keyboard feet and body with a pencil, to ensure proper feet orientation if the keyboard is ever disassembled or packed up.
     * No LEDs
 * Switches:
     * Cherry MX Brown
