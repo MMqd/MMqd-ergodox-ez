@@ -7,7 +7,7 @@ This is my configuration for the Ergodox EZ keyboard that I have used daily sinc
     * Keycaps: Blank sculpted
     * Feet: Black
         * Tip: Mark the keyboard feet and body with a pencil, to ensure proper feet orientation if the keyboard is ever disassembled or packed up.
-    * No LEDs
+    * No RGB (Shine or Glow)
 * Switches:
     * Cherry MX Brown
     * Filmed with 0.15mm films
