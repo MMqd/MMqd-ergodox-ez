@@ -161,7 +161,7 @@ QWERTY layer for gaming with some extra keys for easy access.
 ```
 
 ### Layer 4: Colemak with rotated keys test (legacy)
-Certain frequently used keys have been rotated to sit directly under the index fingers rather than on the sides. This makes them quicker and easier to access compared to their default positions.
+Certain frequently used keys have been rotated to sit directly over the index fingers rather than on the sides. This makes them quicker and easier to access compared to their default positions.
 
 ```
 ,--------------------------------------------------.           ,--------------------------------------------------.
