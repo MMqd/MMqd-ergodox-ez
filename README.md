@@ -27,6 +27,7 @@ This is my configuration for the Ergodox EZ keyboard that I have used daily sinc
 * Colemak layout
 * QWERTY layout layer for gaming
 * Mouse layer removes the need for an external mouse for day-to-day tasks
+* Hand swapping while keys are held/toggled for easier access to keybinds when using keyboard in one hand and mouse in the other.
 
 ## Design Considerations
 Disable unused keys to prevent miss-presses
@@ -76,17 +77,22 @@ To improve thumb access, some keycaps are rotated 180° from their default orien
 |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
 | LCtrl  |   Z  |   X  |   C  |   V  |   B  |      |           |      |   K  |   M  |   ,  |   .  |   /  |        |
 `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
-  | LALT |      |      | TAB/ | DEL/ |                                       | TAB/ | DEL/ |      |      |      |
-  |      |      |      | SUPER| ALT  |                                       | SUPER| LALT |      |      |      |
+  | LALT | SWAP |      | TAB/ | DEL/ |                                       | TAB/ | DEL/ |      | SWAP |      |
+  |      | HANDS|      | SUPER| ALT  |                                       | SUPER| LALT |      | HANDS|      |
+  |      | MOMEN|      |      |      |                                       |      |      |      | MOMEN|      |
   `----------------------------------'                                       `----------------------------------'
                                         ,-------------.     ,-------------.
-                                        |      |      |     |      |      |
+                                        | SWAP | SWAP |     | SWAP | SWAP |
+                                        | HANDS| HANDS|     | HANDS| HANDS|
+                                        | MOMEN| TOGG |     | TOGG | MOMEN|
                                 ,-------|------|------|     |------+------+--------.
-                                |       |      |      |     |      |      | BACKS  |
-                                |SPACE/ | ESC/ |------|     |------|Enter/| PACE/  |
-                                |Layer 2| LCTRL|      |     |      |LSHIFT| Layer 1|
+                                |SPACE/ | ESC/ |      |     |      |Enter/| BACKS  |
+                                |Layer 2| LCTRL|------|     |------|LSHIFT| PACE/  |
+                                |       |      |      |     |      |      | Layer 1|
                                 `---------------------'     `----------------------'
 ```
+
+When momentary/toggle swap hands keys are pressed, red and blue indicator LEDs light up. If swap hands is toggled and momentary swap hands is pressed, the LEDs briefly turn off to indicate the layout is not swapped.
 
 ### Layer 1: Numbers and Symbols
 The number keys are positioned based on the principle that larger numbers are used less than smaller ones, with more commonly used digits placed closer to the index fingers. Even numbers are assigned to the left hand, while odd numbers are on the right. The largest numbers are placed diagonally from the index fingers in the hardest to reach positions. This placement minimizes overall finger travel when entering numbers.
@@ -161,7 +167,7 @@ QWERTY layer for gaming with some extra keys for easy access.
 ```
 
 ### Layer 4: Colemak with rotated keys test (legacy)
-Certain frequently used keys have been rotated to sit directly over the index fingers rather than on the sides. This makes them quicker and easier to access compared to their default positions.
+Certain frequently used keys have been rotated to sit directly under the index fingers rather than on the sides. This makes them quicker and easier to access compared to their default positions.
 
 ```
 ,--------------------------------------------------.           ,--------------------------------------------------.
