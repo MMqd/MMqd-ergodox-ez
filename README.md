@@ -40,7 +40,7 @@ Disable unused keys to prevent miss-presses
 ## Layout
 All empty keys are keys inherited from Layer 0.
 
-**Note:** Keys with dual functions can be double tapped to use the normal key press, ignoring the modifier assigned to holding the key down. This allows you to hold the base key.
+**Note:** Keys with dual functions can be held by double-tapping them quickly. The second tap will hold the base key, ignoring the modifier that would otherwise be triggered by holding the key down.
 
 ### Keycap Rotation
 To improve thumb access, some keycaps are rotated 180° from their default orientation. This is especially important for keys near the thumb cluster, which are normally meant to be pressed by other fingers. Keys marked with `x` are rotated. The halves of the keyboard are mirrored.
